@@ -115,58 +115,58 @@ ownership checks.
 ## Current Numbers
 
 <!-- BENCH:CURRENT:START -->
-These are the harness results auto-updated from `develop` (measured 2026-10-21, commit `198cedc001f1`).
+These are the harness results auto-updated from `develop` (measured 2026-11-26, commit `ca8e96b3d32c`).
 
 | Contract | Function | Parameters | Instructions | Mem bytes | Read entries | Write entries | Read bytes | Write bytes | Event bytes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| stealth-announcer | announce | metadata_len=1 | 15096 | 1610 | 1 | 0 | 104 | 0 | 196 |
-| stealth-announcer | announce | metadata_len=32 | 15096 | 1610 | 1 | 0 | 104 | 0 | 224 |
-| stealth-announcer | announce | metadata_len=256 | 15096 | 1610 | 1 | 0 | 104 | 0 | 448 |
-| stealth-announcer | announce | metadata_len=1024 | 15096 | 1610 | 1 | 0 | 104 | 0 | 1216 |
-| stealth-announcer | announce | metadata_len=4096 | 15096 | 1610 | 1 | 0 | 104 | 0 | 4288 |
+| stealth-announcer | announce | metadata_len=1 | 15203 | 1610 | 1 | 0 | 104 | 0 | 196 |
+| stealth-announcer | announce | metadata_len=32 | 15203 | 1610 | 1 | 0 | 104 | 0 | 224 |
+| stealth-announcer | announce | metadata_len=256 | 15203 | 1610 | 1 | 0 | 104 | 0 | 448 |
+| stealth-announcer | announce | metadata_len=1024 | 15203 | 1610 | 1 | 0 | 104 | 0 | 1216 |
+| stealth-announcer | announce | metadata_len=4096 | 15203 | 1610 | 1 | 0 | 104 | 0 | 4288 |
 | stealth-registry | register_keys | first_time | 52852 | 7481 | 3 | 2 | 156 | 280 | 372 |
 | stealth-registry | register_keys | replacement | 50934 | 6801 | 3 | 2 | 364 | 280 | 372 |
-| stealth-sender | send | asset=xlm | 330285 | 48932 | 6 | 3 | 1232 | 520 | 964 |
-| stealth-sender | send | asset=issued | 330237 | 48932 | 6 | 3 | 1232 | 520 | 964 |
-| stealth-sender | batch_send | batch_size=1 | 339297 | 49597 | 6 | 3 | 1232 | 520 | 1216 |
-| stealth-sender | batch_send | batch_size=5 | 1380248 | 207985 | 6 | 7 | 1232 | 1416 | 3056 |
-| stealth-sender | batch_send | batch_size=10 | 2742894 | 419335 | 6 | 12 | 1232 | 2536 | 5356 |
-| stealth-sender | batch_send | batch_size=25 | 7062139 | 1142485 | 6 | 27 | 1232 | 5896 | 12256 |
-| stealth-sender | batch_send | batch_size=100 | 33186529 | 6762985 | 6 | 102 | 1232 | 22696 | 46756 |
+| stealth-sender | send | asset=xlm | 330392 | 48932 | 6 | 3 | 1232 | 520 | 964 |
+| stealth-sender | send | asset=issued | 330344 | 48932 | 6 | 3 | 1232 | 520 | 964 |
+| stealth-sender | batch_send | batch_size=1 | 339404 | 49597 | 6 | 3 | 1232 | 520 | 1216 |
+| stealth-sender | batch_send | batch_size=5 | 1380783 | 207985 | 6 | 7 | 1232 | 1416 | 3056 |
+| stealth-sender | batch_send | batch_size=10 | 2743964 | 419335 | 6 | 12 | 1232 | 2536 | 5356 |
+| stealth-sender | batch_send | batch_size=25 | 7064814 | 1142485 | 6 | 27 | 1232 | 5896 | 12256 |
+| stealth-sender | batch_send | batch_size=100 | 33197229 | 6762985 | 6 | 102 | 1232 | 22696 | 46756 |
 | stealth-sender | withdraw_many | entries=1 | 166455 | 24918 | 4 | 3 | 888 | 520 | 616 |
 | stealth-sender | withdraw_many | entries=10 | 1478512 | 218040 | 4 | 12 | 888 | 2536 | 4756 |
 | stealth-sender | withdraw_many | entries=30 | 4826570 | 760300 | 4 | 32 | 888 | 7016 | 13956 |
-| wraith-names | register | name_len=3 | 88106 | 10944 | 2 | 3 | 104 | 568 | 348 |
-| wraith-names | register | name_len=32 | 88654 | 10914 | 2 | 3 | 104 | 596 | 376 |
-| wraith-names | resolve | hit | 39126 | 4010 | 2 | 0 | 440 | 0 | 144 |
+| wraith-names | register | name_len=3 | 88272 | 11096 | 2 | 3 | 104 | 584 | 348 |
+| wraith-names | register | name_len=32 | 88820 | 11066 | 2 | 3 | 104 | 612 | 376 |
+| wraith-names | resolve | hit | 39186 | 4034 | 2 | 0 | 456 | 0 | 144 |
 | wraith-names | resolve | miss | 27723 | 2655 | 2 | 0 | 104 | 0 | 0 |
-| wraith-names | name_of | hit | 49222 | 4865 | 3 | 0 | 604 | 0 | 0 |
+| wraith-names | name_of | hit | 49282 | 4889 | 3 | 0 | 620 | 0 | 0 |
 | wraith-names | name_of | miss | 25374 | 2127 | 2 | 0 | 104 | 0 | 0 |
-| wraith-names | bulk_register | count=5 | 537147 | 62539 | 2 | 11 | 104 | 2552 | 2060 |
-| wraith-names | bulk_register | count=10 | 1181877 | 155599 | 2 | 21 | 104 | 5032 | 4000 |
-| wraith-names | bulk_register | count=20 | 2811135 | 442669 | 2 | 41 | 104 | 9992 | 7880 |
-| wraith-names | bulk_renew | count=5 | 351158 | 25489 | 11 | 0 | 2584 | 0 | 1032 |
-| wraith-names | bulk_renew | count=10 | 718431 | 51559 | 21 | 0 | 5064 | 0 | 1812 |
-| wraith-names | bulk_renew | count=20 | 1511175 | 111799 | 41 | 0 | 10024 | 0 | 3372 |
-| wraith-names | extend_name_ttl | existing | 63741 | 6354 | 4 | 0 | 656 | 0 | 264 |
+| wraith-names | bulk_register | count=5 | 537977 | 63299 | 2 | 11 | 104 | 2632 | 2060 |
+| wraith-names | bulk_register | count=10 | 1183537 | 157119 | 2 | 21 | 104 | 5192 | 4000 |
+| wraith-names | bulk_register | count=20 | 2814455 | 445709 | 2 | 41 | 104 | 10312 | 7880 |
+| wraith-names | bulk_renew | count=5 | 351458 | 25609 | 11 | 0 | 2664 | 0 | 1032 |
+| wraith-names | bulk_renew | count=10 | 719031 | 51799 | 21 | 0 | 5224 | 0 | 1812 |
+| wraith-names | bulk_renew | count=20 | 1512375 | 112279 | 41 | 0 | 10344 | 0 | 3372 |
+| wraith-names | extend_name_ttl | existing | 63801 | 6378 | 4 | 0 | 672 | 0 | 264 |
 | stealth-splitter | create_split | beneficiaries=5 | 121823 | 14396 | 1 | 2 | 180 | 1300 | 544 |
 | stealth-splitter | create_split | beneficiaries=15 | 230548 | 38036 | 1 | 2 | 180 | 2700 | 544 |
 | stealth-splitter | create_split | beneficiaries=25 | 343273 | 77676 | 1 | 2 | 180 | 4100 | 544 |
-| stealth-splitter | fund_split | beneficiaries=5 | 946972 | 146219 | 4 | 8 | 2116 | 2644 | 2848 |
-| stealth-splitter | fund_split | beneficiaries=15 | 2755375 | 439179 | 4 | 18 | 3516 | 6284 | 7448 |
-| stealth-splitter | fund_split | beneficiaries=25 | 4730305 | 777939 | 4 | 28 | 4916 | 9924 | 12048 |
-| stealth-vault | deposit | asset=xlm | 262123 | 39207 | 6 | 4 | 1228 | 924 | 1084 |
-| stealth-vault | deposit | asset=issued | 261883 | 39207 | 6 | 4 | 1228 | 924 | 1084 |
+| stealth-splitter | fund_split | beneficiaries=5 | 947507 | 146219 | 4 | 8 | 2116 | 2644 | 2848 |
+| stealth-splitter | fund_split | beneficiaries=15 | 2756980 | 439179 | 4 | 18 | 3516 | 6284 | 7448 |
+| stealth-splitter | fund_split | beneficiaries=25 | 4732980 | 777939 | 4 | 28 | 4916 | 9924 | 12048 |
+| stealth-vault | deposit | asset=xlm | 262230 | 39207 | 6 | 4 | 1228 | 924 | 1084 |
+| stealth-vault | deposit | asset=issued | 261990 | 39207 | 6 | 4 | 1228 | 924 | 1084 |
 | stealth-vault | claim | unlocked | 201891 | 32853 | 4 | 4 | 1476 | 520 | 628 |
 | stealth-vault | refund | depositor | 197513 | 30286 | 3 | 4 | 1608 | 520 | 628 |
 | stealth-vault | refund_permissionless | keeper | 210287 | 32111 | 3 | 4 | 1608 | 520 | 628 |
 | governance | propose | happy_path | 116975 | 18098 | 2 | 2 | 464 | 964 | 320 |
 | governance | vote | happy_path | 236214 | 43742 | 4 | 3 | 1636 | 1164 | 364 |
 | governance | execute | happy_path | 164625 | 29805 | 1 | 2 | 1048 | 1040 | 256 |
-| stealth-batch-sender | batch_send | count=1 | 321804 | 47451 | 5 | 3 | 1136 | 520 | 1276 |
-| stealth-batch-sender | batch_send | count=10 | 2745679 | 417747 | 5 | 12 | 1136 | 2536 | 5416 |
-| stealth-batch-sender | batch_send | count=50 | 15073101 | 2645627 | 5 | 52 | 1136 | 11496 | 23816 |
-| stealth-batch-sender | batch_send | count=100 | 33411149 | 6766977 | 5 | 102 | 1136 | 22696 | 46816 |
+| stealth-batch-sender | batch_send | count=1 | 321911 | 47451 | 5 | 3 | 1136 | 520 | 1276 |
+| stealth-batch-sender | batch_send | count=10 | 2746749 | 417747 | 5 | 12 | 1136 | 2536 | 5416 |
+| stealth-batch-sender | batch_send | count=50 | 15078451 | 2645627 | 5 | 52 | 1136 | 11496 | 23816 |
+| stealth-batch-sender | batch_send | count=100 | 33421849 | 6766977 | 5 | 102 | 1136 | 22696 | 46816 |
 <!-- BENCH:CURRENT:END -->
 
 ## Gas Regression Gate
